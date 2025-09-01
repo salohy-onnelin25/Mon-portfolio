@@ -111,9 +111,15 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background: rgb(223, 220, 220);
+    color: black;
   }
   .liste{
     margin-top: 10px;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 1rem;
   }
   .top{
     padding-bottom: 10px;
