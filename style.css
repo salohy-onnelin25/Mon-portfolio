@@ -26,7 +26,8 @@ nav ul li a {
   border-radius: 5px;
 }
 nav ul li a:hover {
-  color: rgb(118, 121, 118);
+  color: black;
+  background: rgb(226, 223, 223);
 }
 
 button {
