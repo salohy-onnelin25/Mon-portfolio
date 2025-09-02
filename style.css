@@ -22,10 +22,13 @@ nav ul li a {
   cursor: pointer;
   text-transform: capitalize;
   user-select: none;
+  box-shadow: -1px 0px 11px 4px white;
+  border-radius: 5px;
 }
 nav ul li a:hover {
   color: rgb(118, 121, 118);
 }
+
 button {
   user-select: none;
   box-shadow: 1px -1px 20px 16px #29292c;
@@ -65,8 +68,9 @@ nav ul {
 }
 .top p {
   margin-top: 60px;
+  font-weight: 1000;
+ box-shadow: 0px 0px 20px 3px #958a8a;
 }
-
 .top-milieu button {
   margin-top: 60px;
   padding: 20px;
@@ -121,6 +125,7 @@ footer {
     color: black;
     font-size: 1rem;
     font-weight: 800;
+    box-shadow: 0px -5px 20px 2px black;
   }
   .top{
     padding-bottom: 10px;
