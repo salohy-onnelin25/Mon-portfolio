@@ -115,17 +115,14 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgb(223, 220, 220);
-    color: black;
   }
   .liste{
     margin-top: 10px;
   }
   nav ul li a{
-    color: black;
+    
     font-size: 1rem;
     font-weight: 800;
-    box-shadow: 0px -5px 20px 2px black;
   }
   .top{
     padding-bottom: 10px;
