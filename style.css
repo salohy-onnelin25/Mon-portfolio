@@ -22,7 +22,7 @@ nav ul li a {
   cursor: pointer;
   text-transform: capitalize;
   user-select: none;
-  box-shadow: -1px 0px 11px 4px white;
+  box-shadow: -1px 0px 11px 4px #666262;
   border-radius: 5px;
 }
 nav ul li a:hover {
