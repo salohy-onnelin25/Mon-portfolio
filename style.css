@@ -98,6 +98,12 @@ nav ul {
   justify-content: space-evenly;
   margin-top: 40px;
 }
+.top-botton2 button a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: black;
+}
 .top-botton2 button {
   padding: 50px 20px;
   text-transform: capitalize;
