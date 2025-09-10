@@ -43,6 +43,7 @@ button:hover {
   transform: scale(1.05);
   border-radius: 30px;
 }
+
 /* ...........Header............. */
 header {
   background: black;
@@ -103,6 +104,10 @@ nav ul {
   text-transform: capitalize;
   font-size: 2rem;
   color: black;
+  transition: 0.3s;
+}
+.top-botton2 button a:hover{
+  color: white;
 }
 .top-botton2 button {
   padding: 50px 20px;
