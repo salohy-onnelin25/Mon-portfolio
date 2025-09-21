@@ -200,6 +200,7 @@ main .description h2 {
 @media (max-width: 1140px) {
   main .description h2 {
     font-size: 1rem;
+    margin: 10px 0;
   }
 }
 main .description p {
