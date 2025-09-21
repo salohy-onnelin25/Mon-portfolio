@@ -123,8 +123,8 @@ header .header-bottom::after {
 }
 @media (max-width: 1140px) {
   header .header-bottom::after {
-    font-size: 7rem;
-    top: -50px;
+    font-size: 5rem;
+    top: -30px;
   }
 }
 @-webkit-keyframes blink {
@@ -161,13 +161,14 @@ header .header-bottom .header-social i {
 }
 @media (max-width: 1140px) {
   header .header-bottom .header-social i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 main {
   height: 100vh;
   width: 90%;
+  max-width: 100%;
   margin: 40px auto;
   -webkit-box-shadow: 2px 0px 11px 7px rgb(158, 211, 249);
           box-shadow: 2px 0px 11px 7px rgb(158, 211, 249);
@@ -198,7 +199,7 @@ main .description h2 {
 }
 @media (max-width: 1140px) {
   main .description h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 main .description p {
@@ -207,7 +208,7 @@ main .description p {
 }
 @media (max-width: 1140px) {
   main .description p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 main .projets {
@@ -217,6 +218,12 @@ main .projets {
   gap: 10px;
   background: rgba(49, 48, 48, 0.575);
   padding: 20px;
+}
+@media (max-width: 1140px) {
+  main .projets {
+    padding: 10px;
+    gap: 5px;
+  }
 }
 main .projets div {
   cursor: pointer;
@@ -302,12 +309,17 @@ footer p {
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
+@media (max-width: 1140px) {
+  footer p {
+    font-size: 1rem;
+  }
+}
 footer i {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.959);
 }
 @media (max-width: 1140px) {
   footer i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=index.css.map */

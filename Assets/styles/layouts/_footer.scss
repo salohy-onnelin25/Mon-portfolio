@@ -10,12 +10,15 @@ footer {
     p {
         font-size: 1.3rem;
         margin-bottom: 20px;
+        @media (max-width: 1140px){
+            font-size: 1rem;
+        }
     }
     i {
         font-size: 2rem;
         color: $white;
         @media (max-width: 1140px) {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 }

@@ -67,8 +67,8 @@ header {
             animation: blink 2s infinite;
             cursor: pointer;
             @media (max-width: 1140px){
-                font-size: 7rem;
-                top: -50px;
+                font-size: 5rem;
+                top: -30px;
             }
             @keyframes blink {
                 0%,
@@ -91,7 +91,7 @@ header {
                 font-size: 2rem;
                 color: $white;
                 @media (max-width: 1140px){
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
         }
