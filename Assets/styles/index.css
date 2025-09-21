@@ -210,6 +210,7 @@ main .description p {
 @media (max-width: 1140px) {
   main .description p {
     font-size: 0.8rem;
+    word-spacing: 2px;
   }
 }
 main .projets {
