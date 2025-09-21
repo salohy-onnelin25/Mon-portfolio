@@ -1,11 +1,14 @@
 header {
-    height: 100vh;
+    min-height: 100vh;
     width: 90%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    @media (max-width: 1140px){
+        height: auto;
+    }
     .header-top {
-        height: 10%;
+        padding-top: 20px;
+        height: 10Vh;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -17,7 +20,7 @@ header {
         }
     }
     .header-center {
-        height: 80%;
+        height: 80vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -34,7 +37,7 @@ header {
         }
         .header-info {
             h1 {
-                font-size: 8rem;
+                font-size: 5rem;
                 @media (max-width: 1140px) {
                     font-size: 2rem;
                 }
@@ -48,19 +51,19 @@ header {
         }
     }
     .header-bottom {
-        height: 10%;
+        height: 10vh;
         width: 100%;
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
-        gap: 650px;
         position: relative;
         &::after {
-            content: "^";
+            content: "↓";
+            display: block;
             position: absolute;
+            top: -150%;
             left: 50%;
-            top: -95px;
-            transform: translateX(-50%) rotate(180deg);
+            transform: translateX(-50%, -150%);
             font-size: 10rem;
             font-weight: bolder;
             color: $white;
