@@ -15,47 +15,42 @@
   font-weight: 500;
 }
 body {
-  background: rgb(28, 28, 66);
+  background: linear-gradient(202deg, rgb(58, 55, 112) 77%, rgb(10, 10, 122) 90%, rgb(0, 212, 255) 100%);
 }
 
 a {
   text-decoration: none;
-  color: green;
+  color: rgb(150, 138, 138);
 }
 
 header {
   height: 100vh;
-  position: relative;
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 header .header-top {
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 40px;
-}
-header .header-top h1 {
-  color: white;
-  text-transform: uppercase;
-  font: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 header .header-top address {
   font-size: 1.2rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
   font-style: normal;
   line-height: 1.5;
 }
 header .header-center {
-  height: 500px;
+  height: 80%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +66,7 @@ header .header-center {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 header .header-center .header-img {
   width: 120px;
@@ -81,21 +76,56 @@ header .header-center .header-img {
   background: url(../img/469218025_2867263606757805_2181642583290175945_n.jpg) center/cover;
 }
 header .header-center .header-info h1 {
-  font-size: 10rem;
+  font-size: 8rem;
+}
+@media (max-width: 1140px) {
+  header .header-center .header-info h1 {
+    font-size: 3rem;
+  }
 }
 header .header-center .header-info p {
   font-size: 3rem;
 }
-header .header-center .header-down {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 50px;
-  -webkit-animation: blink 4s infinite;
-          animation: blink 4s infinite;
+@media (max-width: 1140px) {
+  header .header-center .header-info p {
+    font-size: 2rem;
+  }
 }
-header .header-center .header-down i {
-  color: white;
+header .header-bottom {
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 650px;
+  position: relative;
+}
+header .header-bottom::after {
+  content: "^";
+  position: absolute;
+  left: 50%;
+  top: -95px;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  font-size: 10rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.959);
+  -webkit-animation: blink 2s infinite;
+          animation: blink 2s infinite;
   cursor: pointer;
+}
+@media (max-width: 1140px) {
+  header .header-bottom::after {
+    font-size: 7rem;
+    top: -50px;
+  }
 }
 @-webkit-keyframes blink {
   0%, 50%, 100% {
@@ -113,22 +143,171 @@ header .header-center .header-down i {
     opacity: 0;
   }
 }
-header .header-bottom {
-  width: 100%;
+header .header-bottom .header-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 20px;
-  padding: 20px;
-  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-header .header-bottom i {
-  font-size: 40px;
-  color: white;
+header .header-bottom .header-social i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.959);
+}
+@media (max-width: 1140px) {
+  header .header-bottom .header-social i {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  height: 100vh;
+  width: 90%;
+  margin: 40px auto;
+  -webkit-box-shadow: 2px 0px 11px 7px rgb(158, 211, 249);
+          box-shadow: 2px 0px 11px 7px rgb(158, 211, 249);
+}
+main .description {
+  height: 30%;
+  width: 100%;
+  background: rgba(49, 48, 48, 0.575);
+  color: rgba(255, 255, 255, 0.959);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .description h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+@media (max-width: 1140px) {
+  main .description h2 {
+    font-size: 1.2rem;
+  }
+}
+main .description p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+@media (max-width: 1140px) {
+  main .description p {
+    font-size: 1rem;
+  }
+}
+main .projets {
+  height: 70%;
+  display: grid;
+  grid-template-columns: 5, 1fr;
+  gap: 10px;
+  background: rgba(49, 48, 48, 0.575);
+  padding: 20px;
+}
+main .projets div {
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #3498db;
+  border: 2px solid #fff;
+  border: none;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+}
+@media (max-width: 1140px) {
+  main .projets div {
+    width: 100%;
+    height: 50%;
+  }
+}
+main .projets div:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+main .projets .helium {
+  grid-column: 3/4;
+  background: url(../img/main.png) center/cover;
+}
+main .projets .montaigne {
+  grid-column: 2/3;
+  background: url(../img/montaigne\ -png.webp) center/cover;
+}
+main .projets .resto {
+  grid-column: 4/5;
+  background: url(../img/div\ resto.webp) center/cover;
+}
+main .projets .tesla {
+  grid-column: 1/2;
+  background: url(../img/voiture\ tesla.webp) center/cover;
+}
+main .projets .vitrine {
+  grid-column: 5/6;
+  background: url(../img/vitrine\ 1.webp) center/cover;
+}
+main .projets .cours {
+  grid-column: 1/2;
+  background: url(../img/div\ cours.webp) center/cover;
+}
+main .projets .agence {
+  grid-column: 2/3;
+  background: url(../img/Agence\ .png) center/cover;
+}
+main .projets .hotel {
+  grid-column: 3/4;
+  background: url(../img/hotel\ \(3\).webp) center/cover;
+}
+main .projets .voyage {
+  grid-column: 4/5;
+  background: url(../img/voyage.png) center/cover;
+}
+main .projets .mode {
+  grid-column: 5/6;
+  background: url(../img/mode.png) center/cover;
+}
+
+footer {
+  background: rgba(49, 48, 48, 0.575);
+  color: rgba(255, 255, 255, 0.959);
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+footer p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+footer i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.959);
+}
+@media (max-width: 1140px) {
+  footer i {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=index.css.map */

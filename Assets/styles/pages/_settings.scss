@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 @font-face {
     font-family: "OpenSans";
     src: url(../fonts/OpenSans_Condensed-Regular.ttf);
@@ -18,18 +17,17 @@
 $font1: OpenSans, sans-serif;
 $font2: OpenSans-Italic, italic;
 
-$white: white;
+$white: rgba(255, 255, 255, 0.959);
 $black: black;
-$black1: rgb(32, 31, 31);
-$blue: rgb(28, 28, 66);
-$purple: rgb(66, 0, 128);
-$green: green;
+$black1: rgba(49, 48, 48, 0.575);
+$white1: rgb(150, 138, 138);
+$background: linear-gradient(202deg,rgba(58, 55, 112, 1) 77%, rgba(10, 10, 122, 1) 90%, rgba(0, 212, 255, 1) 100%);
 
 body{
-    background: $blue;
+    background: $background;
 }
 
-a{
+a {
     text-decoration: none;
-    color: $green;
+    color:$white1;
 }

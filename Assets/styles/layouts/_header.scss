@@ -1,17 +1,14 @@
 header {
     height: 100vh;
-    position: relative;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
     .header-top {
+        height: 10%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        h1 {
-            color: $white;
-            text-transform: uppercase;
-            font: normal;
-        }
+        flex-direction: column;
+        align-items: flex-start;
         address {
             font-size: 1.2rem;
             color: $white;
@@ -20,7 +17,7 @@ header {
         }
     }
     .header-center {
-        height: 500px;
+        height: 80%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -37,20 +34,41 @@ header {
         }
         .header-info {
             h1 {
-                font-size: 10rem;
+                font-size: 8rem;
+                @media (max-width: 1140px) {
+                    font-size: 3rem;
+                }
             }
             p {
                 font-size: 3rem;
+                @media (max-width: 1140px) {
+                    font-size: 2rem;
+                }
             }
         }
-        .header-down {
-            margin-top: 100px;
-            text-align: center;
-            font-size: 50px;
-            animation: blink 4s infinite;
-            i {
-                color: $white;
-                cursor: pointer;
+    }
+    .header-bottom {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 650px;
+        position: relative;
+        &::after {
+            content: "^";
+            position: absolute;
+            left: 50%;
+            top: -95px;
+            transform: translateX(-50%) rotate(180deg);
+            font-size: 10rem;
+            font-weight: bolder;
+            color: $white;
+            animation: blink 2s infinite;
+            cursor: pointer;
+            @media (max-width: 1140px){
+                font-size: 7rem;
+                top: -50px;
             }
             @keyframes blink {
                 0%,
@@ -64,18 +82,18 @@ header {
                 }
             }
         }
-    }
-    .header-bottom {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        gap: 20px;
-        padding: 20px;
-        margin-top: 100px;
-        i{
-            font-size: 40px;
-            color: $white;
+        .header-social {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            i {
+                font-size: 2rem;
+                color: $white;
+                @media (max-width: 1140px){
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
