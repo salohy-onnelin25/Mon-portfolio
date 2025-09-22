@@ -1,122 +1,48 @@
-main {
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
     width: 90%;
-    max-width: 100%;
-    margin: 40px auto;
-    box-shadow: 2px 0px 11px 7px rgb(158 211 249);
-    .description {
-        height: 20%;
-        width: 100%;
-        background: $black1;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h2 {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            margin: 20px 0;
-            @media (max-width: 1140px) {
-                font-size: 1rem;
-                margin: 10px 0;
-            }
-        }
-        p {
-            text-align: center;
-            font-size: 1.4rem;
-            @media (max-width: 1140px) {
-                font-size: 0.8rem;
-                word-spacing: 2px;
-            }
-        }
-    }
-    .projets {
+    margin: 0 auto;
+    background: $black1;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 1px 1px 15px 6px #999292;
+    div{
         height: 80%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 20px;
-        background: $black1;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        @media (max-width: 1140px) {
-            padding: 10px;
-            gap: 20px;
-            grid-auto-rows: 100px;
-        }
-        div {
-            cursor: pointer;
-            aspect-ratio: 2/1;
-            width: 100%;
-            border: none;
-            transition:
-                transform 0.3s,
-                background-color 0.3s;
-        }
-        div:hover {
-            transform: scale(1.2);
-        }
-        .helium,
-        .resto,
-        .vitrine,
-        .agence,
-        .voyage {
-            @media (max-width: 1140px) {
-                grid-row: span 1;
-            }
-        }
-        .helium {
-            background: url(../img/main.png) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .montaigne {
-            background: url(../img/montaigne\ -png.webp) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .resto {
-            background: url(../img/div\ resto.webp) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .tesla {
-            background: url(../img/voiture\ tesla.webp) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .vitrine {
-            background: url(../img/vitrine\ 1.webp) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .cours {
-            background: url(../img/div\ cours.webp) center;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .agence {
-            background: url(../img/Agence\ .png) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .hotel {
-            background: url(../img/hotel\ \(3\).webp) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .voyage {
-            background: url(../img/voyage.png) center ;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
-        .mode {
-            background: url(../img/mode.png) center;
-            background-size: contain ;
-            background-repeat: no-repeat;
-        }
+        width: 80%;
+        max-width: 2000px;
+    }
+    .helium{
+        background: url(../img/main.png) center /cover;
+        
+    }
+    .montaigne{
+        background: url(../img/montaigne\ -png.webp) center /cover;
+        
+    }
+    .resto{
+        background: url(../img/div\ resto.webp) center /cover;
+    }
+    .tesla{
+        background: url(../img/voiture\ tesla.webp) center /cover;
+    }
+    .vitrine{
+        background: url(../img/vitrine\ 1.webp) center /cover;
+    }
+    .cours{
+        background: url(../img/div\ cours.webp) center /cover;
+    }
+    .agence{
+        background: url(../img/Agence\ .png) center /cover;
+    }
+    .hotel{
+        background: url(../img/hotel\ \(3\).webp) center /cover;
+    }
+    .voyage{
+        background: url(../img/voyage.png) center /cover;
+    }
+    .mode{
+        background: url(../img/mode.png) center /cover;
     }
 }
