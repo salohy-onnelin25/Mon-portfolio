@@ -1,48 +1,53 @@
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    height: 100vh;
+main {
+    min-height: 100vh;
     width: 90%;
+    max-width: 2000px;
     margin: 0 auto;
     background: $black1;
     padding: 20px;
-    align-items: center;
-    box-shadow: 1px 1px 15px 6px #999292;
-    div{
-        height: 80%;
-        width: 80%;
-        max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    div {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        aspect-ratio: 16/9;
+        cursor: pointer;
+        transition: transform 0.4s ease, filter 0.3s ease;
     }
-    .helium{
-        background: url(../img/main.png) center /cover;
-        
+    div:hover {
+        transform: scale(1.3); 
+        filter: brightness(1.1);
     }
-    .montaigne{
-        background: url(../img/montaigne\ -png.webp) center /cover;
-        
+    .helium {
+        background-image: url(../img/main.png);
     }
-    .resto{
-        background: url(../img/div\ resto.webp) center /cover;
+    .montaigne {
+        background-image: url(../img/montaigne\ -png.webp);
     }
-    .tesla{
-        background: url(../img/voiture\ tesla.webp) center /cover;
+    .resto {
+        background-image: url(../img/div\ resto.webp);
     }
-    .vitrine{
-        background: url(../img/vitrine\ 1.webp) center /cover;
+    .tesla {
+        background-image: url(../img/voiture\ tesla.webp);
     }
-    .cours{
-        background: url(../img/div\ cours.webp) center /cover;
+    .vitrine {
+        background-image: url(../img/vitrine\ 1.webp);
     }
-    .agence{
-        background: url(../img/Agence\ .png) center /cover;
+    .cours {
+        background-image: url(../img/div\ cours.webp);
     }
-    .hotel{
-        background: url(../img/hotel\ \(3\).webp) center /cover;
+    .agence {
+        background-image: url(../img/Agence\ .png);
     }
-    .voyage{
-        background: url(../img/voyage.png) center /cover;
+    .hotel {
+        background-image: url(../img/hotel\ \(3\).webp);
     }
-    .mode{
-        background: url(../img/mode.png) center /cover;
+    .voyage {
+        background-image: url(../img/voyage.png);
+    }
+    .mode {
+        background-image: url(../img/mode.png);
     }
 }

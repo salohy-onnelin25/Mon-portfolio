@@ -8,17 +8,11 @@ footer {
     justify-content: center;
     text-align: center;
     p {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 2vw, 1.2rem);
         margin-bottom: 20px;
-        @media (max-width: 1140px){
-            font-size: 1rem;
-        }
     }
     i {
-        font-size: 2rem;
+        font-size: clamp(1rem, 1.8vw, 1.5rem);
         color: $white;
-        @media (max-width: 1140px) {
-            font-size: 1.2rem;
-        }
     }
 }
