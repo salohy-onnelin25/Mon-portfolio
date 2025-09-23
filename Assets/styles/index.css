@@ -69,6 +69,13 @@ header .header-top .header-social {
 header .header-top .header-social i {
   color: rgba(255, 255, 255, 0.959);
   font-size: clamp(1rem, 1.8vw, 1.5rem);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header-top .header-social i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: rgb(150, 138, 138);
 }
 header .header-center {
   height: 70dvh;
@@ -261,4 +268,11 @@ footer p {
 footer i {
   font-size: clamp(1rem, 1.8vw, 1.5rem);
   color: rgba(255, 255, 255, 0.959);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+footer i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: rgb(150, 138, 138);
 }/*# sourceMappingURL=index.css.map */
