@@ -24,18 +24,18 @@ a {
 }
 
 header {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 90%;
   max-width: 2000px;
   margin: 0 auto;
 }
 @media (max-width: 650px) {
   header {
-    padding-top: 20px;
+    padding: 10px 0;
   }
 }
 header .header-top {
-  height: 20vh;
+  height: 20dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,11 +71,11 @@ header .header-top .header-social i {
   font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 header .header-center {
-  height: 70vh;
+  height: 70dvh;
   color: rgba(255, 255, 255, 0.959);
 }
 header .header-center .header-center1 {
-  height: 20vh;
+  height: 20dvh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,7 @@ header .header-center .header-center1 .header-info h1 {
   font-size: clamp(1rem, 2.1vw, 2rem);
 }
 header .header-center .description {
-  height: 40vh;
+  height: 40dvh;
   width: 100%;
   max-width: 2000px;
   margin: 0 auto;
@@ -183,7 +183,7 @@ header .header-center .header-bottom i {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 90%;
   max-width: 2000px;
   margin: 0 auto;
