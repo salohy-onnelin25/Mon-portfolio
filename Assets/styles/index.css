@@ -244,6 +244,9 @@ main .voyage {
 main .mode {
   background-image: url(../img/mode.png);
 }
+main .gaming {
+  background-image: url(../img/gaming.png);
+}
 
 footer {
   background: rgba(49, 48, 48, 0.575);
