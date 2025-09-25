@@ -39,6 +39,20 @@ header {
     .header-center {
         height: 70dvh;
         color: $white;
+        @keyframes descente {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
         .header-center1 {
             height: 20dvh;
             display: flex;
@@ -46,7 +60,7 @@ header {
             flex-direction: column;
             align-items: center;
             text-align: center;
-
+            animation: descente 2s ease-out forwards;
             .header-img {
                 width: 90px;
                 height: 90px;
