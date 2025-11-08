@@ -259,29 +259,14 @@ main .montaigne {
 main .resto {
   background-image: url(../img/div\ resto.webp);
 }
-main .tesla {
-  background-image: url(../img/voiture\ tesla.webp);
-}
-main .vitrine {
-  background-image: url(../img/vitrine\ 1.webp);
-}
-main .cours {
-  background-image: url(../img/div\ cours.webp);
-}
-main .agence {
-  background-image: url(../img/Agence\ .png);
-}
-main .hotel {
-  background-image: url(../img/hotel\ \(3\).webp);
-}
-main .voyage {
-  background-image: url(../img/voyage.png);
-}
-main .mode {
-  background-image: url(../img/mode.png);
+main .scroll {
+  background-image: url(../img/transparent-brown-scroll.png);
 }
 main .gaming {
   background-image: url(../img/gaming.png);
+}
+main .MDP {
+  background-image: url(../img/6671894.png);
 }
 
 footer {
