@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @font-face {
@@ -174,6 +175,7 @@ header .header-center .description h2 {
 header .header-center .description p {
   color: rgba(255, 255, 255, 0.959);
   font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.4;
 }
 header .header-center .header-bottom {
   margin-top: 0;
