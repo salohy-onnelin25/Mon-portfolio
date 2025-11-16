@@ -137,8 +137,8 @@ header .header-center .header-center1 {
           animation: descente 2s ease-out forwards;
 }
 header .header-center .header-center1 .header-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 2px solid #333;
   background: url(../img/469218025_2867263606757805_2181642583290175945_n.jpg) center/cover;
