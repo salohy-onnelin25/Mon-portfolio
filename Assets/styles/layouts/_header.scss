@@ -62,8 +62,9 @@ header {
             text-align: center;
             animation: descente 2s ease-out forwards;
             .header-img {
-                width: 80px;
-                height: 80px;
+                width: 10vw;
+                max-width: 80px;
+                height: 10vw;
                 border-radius: 50%;
                 border: 2px solid #333;
                 background: url(../img/469218025_2867263606757805_2181642583290175945_n.jpg) center/cover;
